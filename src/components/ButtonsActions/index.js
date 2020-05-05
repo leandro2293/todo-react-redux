@@ -2,7 +2,7 @@ import React from 'react';
 import { MdDelete, MdCheckCircle } from "react-icons/md";
 
 import { useDispatch } from "react-redux";
-import * as todoActions from "../../store/actions/todos";
+import { Creators as todoActions } from "../../store/ducks/todos";
 
 import './styles.css';
 

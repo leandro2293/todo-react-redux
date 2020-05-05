@@ -3,7 +3,7 @@ import ButtonsActions from "../ButtonsActions";
 
 import { useSelector, useDispatch } from "react-redux";
 
-import * as todoActions from "../../store/actions/todos";
+import { Creators as todoActions } from "../../store/ducks/todos";
 
 import './styles.css';
 
