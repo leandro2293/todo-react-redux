@@ -1,0 +1,23 @@
+button {
+  padding: 5px 20px 3px 20px;
+  background-color: #ffbd69;
+  color: #543864;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:first-of-type {
+  border-right: 0.5px solid #f1f1f1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: auto;
+}
+
+button:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
