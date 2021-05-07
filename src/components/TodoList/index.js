@@ -32,9 +32,13 @@ export default function Todolist() {
           required />
         <input type="submit" value="ADD"></input>
       </form>
-      <ul>
+      <ul style={{}}>
         {todos.map(todo => (
-          <li key={todo.id}>
+          <li key={todo.id} 
+              style={{
+                  backgroundColor: todo.complete ? "#26A69A" : "", 
+                  transition: "linear 0.5s"
+              }}>
             {todo.complete ? <s>{todo.text}</s> : todo.text}
             <ButtonsActions id={todo.id}/>
           </li>

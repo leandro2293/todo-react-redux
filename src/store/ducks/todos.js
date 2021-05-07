@@ -10,7 +10,10 @@ const INITIAL_STATE = [];
 
 const add = (state = INITIAL_STATE, action) => [
   ...state,
-  { id: Math.random(), text: action.text, complete: false }
+  { id: Math.random(), 
+    text: action.text.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '), 
+    complete: false 
+  }
 ];
 
 const toogle = (state = INITIAL_STATE, action) => state.map(
